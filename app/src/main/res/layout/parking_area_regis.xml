@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ParkingArea_regis">
+
+
+
+    <fragment
+        android:id="@+id/mapFragment"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/p_area_"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#000"
+        android:elevation="4dp"
+        app:popupTheme="@color/white"
+        app:theme="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/login_logo"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/select_layout_routes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textColor="#000"
+        android:textColorHint="#696767"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/place_cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textColorHint="#696767"
+            app:cardBackgroundColor="@color/yelow_color"
+            app:cardCornerRadius="10dp">
+
+            <fragment
+                android:id="@+id/autocomplete_fragment"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                android:textColor="#000"
+                android:textColorHint="#696767"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp">
+
+        <FrameLayout
+            android:id="@+id/pinViewLine"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp" />
+
+        <LinearLayout
+            android:id="@+id/pinViewCircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/pinTimeTextView1"
+                android:layout_width="20dp"
+                android:layout_height="40dp"
+                android:layout_gravity="top|center_horizontal"
+                android:background="@color/yelow_color"
+                android:gravity="center"
+                android:padding="5dp"
+
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/pinTimeTextView"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_gravity="top|center_horizontal"
+                android:background="#FFF"
+                android:foregroundGravity="right"
+                android:gravity="center"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <ProgressBar
+                android:id="@+id/pinProgressLoader"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_margin="4dp"
+                android:contentDescription="@null"
+                android:indeterminate="true"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@color/black"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="55dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/btm_txt_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:text="Details Parking Area \n\n"
+                android:textColor="#FFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/upward_icon"
+                android:onClick="open_botm_sheet" />
+
+            <LinearLayout
+                android:id="@+id/first_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/btm_txt_head"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:alpha=".7"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:alpha=".6"
+                    android:background="@drawable/edt_bg"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="15dp"
+                    android:textColor="#FFF"
+                    android:textColorHint="@color/white"
+                    android:textSize="14dp" />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.0"/>
+
+                <EditText
+                    android:id="@+id/email1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:alpha=".6"
+                    android:background="@drawable/edt_bg"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="15dp"
+                    android:textColor="#FFF"
+                    android:textColorHint="@color/white"
+                    android:textSize="14dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/first_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:alpha=".7"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/email2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:alpha=".6"
+                    android:background="@drawable/edt_bg"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:layout_gravity="center"
+                    android:paddingLeft="15dp"
+                    android:textColor="#FFF"
+                    android:textColorHint="@color/white"
+                    android:textSize="14dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"/>
+
+                <EditText
+                    android:id="@+id/email12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:alpha=".6"
+                    android:background="@drawable/edt_bg"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="15dp"
+                    android:textColor="#FFF"
+                    android:textColorHint="@color/white"
+                    android:textSize="14dp" />
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/login_btn_bg"
+                android:text="Submit"
+                android:layout_below="@+id/layout_2"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rel_bg_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/parkng_bg"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/txt_parkng_name"
+        android:layout_margin="15dp"
+        android:singleLine="true"
+        android:textColor="#000"
+
+        android:text="Water Pump Bus Parking"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:background="#68C9C9C9"
+        android:layout_toRightOf="@+id/txt_parkng_name"/>
+
+    <ImageView
+        android:layout_toRightOf="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/flash" />
+
+
+
+</RelativeLayout>

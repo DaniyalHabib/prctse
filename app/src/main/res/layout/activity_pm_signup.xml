@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/singup_2"
+    tools:context="com.hl3hl3.arcoremeasure.renderer.pm_signup">
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="center"
+        app:srcCompat="@drawable/animated_check" />
+
+    <ImageView
+        android:id="@+id/img_"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/registration" />
+
+
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible" />
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:alpha=".7"
+                android:background="@drawable/pm_sign_up_bg"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/pm_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:alpha=".6"
+                    android:background="@null"
+                    android:hint="@string/name"
+                    android:layout_marginRight="5dp"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="15dp"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:textColor="#FFF"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="11dp"
+                    android:alpha=".6"
+                    android:background="@color/white" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:alpha=".6"
+                    android:background="@drawable/user" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:alpha=".6"
+                android:background="@drawable/pm_sign_up_bg"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+
+                <EditText
+                    android:id="@+id/pm_adres"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:alpha=".6"
+                    android:background="@null"
+                    android:layout_marginRight="5dp"
+                    android:hint=" Address "
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    android:textColor="#FFF"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="11dp"
+                    android:alpha=".6"
+                    android:background="@color/white" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="10dp"
+                    android:alpha=".6"
+                    android:background="@drawable/adress" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:alpha=".7"
+                android:background="@drawable/pm_sign_up_bg"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/pm_mobile_no"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:alpha=".6"
+                    android:background="@null"
+                    android:hint="@string/mobile_no"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="#FFF"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="11dp"
+                    android:alpha=".6"
+                    android:background="@color/white" />
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:alpha=".6"
+                    android:background="@drawable/mobile" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:alpha=".7"
+                android:background="@drawable/pm_sign_up_bg"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/pm_nic"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:alpha=".6"
+                    android:background="@null"
+                    android:hint="0000-000000-0"
+                    android:inputType="number"
+                    android:maxLength="13"
+                    android:paddingLeft="15dp"
+                    android:textColor="#FFF"
+                    android:layout_marginRight="5dp"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="11dp"
+                    android:alpha=".6"
+                    android:background="@color/white" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:alpha=".6"
+                    android:background="@drawable/nic_" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:alpha=".6"
+                android:background="@drawable/pm_sign_up_bg"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/pm_email"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:alpha=".6"
+                    android:background="@null"
+                    android:hint="@string/_email_"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#FFF"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="11dp"
+                    android:alpha=".6"
+                    android:background="@color/white" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:alpha=".6"
+                    android:background="@drawable/email" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:alpha=".7"
+                android:background="@drawable/pm_sign_up_bg"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/pm_pswd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:alpha=".6"
+                    android:background="@null"
+                    android:hint="@string/prompt_password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="15dp"
+                    android:textColor="#FFF"
+                    android:layout_marginRight="5dp"
+                    android:textColorHint="@color/white"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="11dp"
+                    android:alpha=".6"
+                    android:background="@color/white" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:alpha=".6"
+                    android:background="@drawable/key" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/sign_up_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_btn_bg"
+        android:text="@string/register"
+        android:textAllCaps="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#4B4B4B"
+        android:textSize="14dp" />
+
+
+</RelativeLayout>

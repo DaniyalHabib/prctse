@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/toolbar_status"
+    android:background="#020202"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/relative_id_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/square_bg">
+
+            <TextView
+                android:id="@+id/txt_p_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="Parking Name"
+                android:maxLines="2"
+                android:layout_marginTop="10dp"
+                android:layout_toStartOf="@+id/timericon"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/timericon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="85dp"
+                android:src="@drawable/clock" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="19dp"
+                android:layout_alignParentRight="true"
+                android:text="02-Feb-2020"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/location_icon"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/txt_p_name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/marker_white" />
+
+            <TextView
+                android:id="@+id/txt_adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_p_name"
+                android:layout_marginTop="9dp"
+                android:textSize="14sp"
+                android:layout_toRightOf="@+id/location_icon"
+                android:text="Sharah-e-Faisal"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/text_para"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_adress"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="10dp"
+                android:maxLines="2"
+                android:layout_marginBottom="10dp"
+                android:text="Aemean egsad ajsdhjad jhbasdkjjka sdkjhakjsnd jasdnla u um,a5 a kahc jklads jk ljadkljna"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+
+
+            <TextView
+                android:id="@+id/text_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_para"
+                android:layout_marginRight="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="10dp"
+                android:text="Detail"
+                android:textColor="@color/yelow_color" />
+
+            <ImageView
+                android:id="@+id/detail_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_para"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/right_arow_yelow" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

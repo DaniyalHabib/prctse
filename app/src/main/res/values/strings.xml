@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Smart Parking</string>
+    <string name="ok">OK</string>
+
+    <string name="need_permission">Camera permission is needed to run this application</string>
+
+    <string name="not_support">This device does not support AR. </string>
+
+    <string name="api_key">AIzaSyBc0w-AvPE6AWsOdtsvNcRqaRe9R4XfLyE</string>
+    <string name="action_1">Delete</string>
+    <string name="action_2">Set as first</string>
+    <string name="action_3">Horizontal move</string>
+    <string name="action_4">Vertical move</string>
+    <string name="submit" translatable="false">Submit</string>
+
+    <string name="action_1_toast">Remove this cube.</string>
+    <string name="action_2_toast">Reorder and set this cube to the first.</string>
+    <string name="action_3_toast">Move on x and z axis.</string>
+    <string name="action_4_toast">Move on y axis.</string>
+    <string name="title_activity_login" translatable="false">SignIn</string>
+    <string name="sign_up" translatable="false">SignUp</string>
+
+    <!-- Strings related to login -->
+    <string name="user" translatable="false"> User</string>
+    <string name="admin" translatable="false"> Admin</string>
+
+    <string name="prompt_email" translatable="false"> Email</string>
+    <string name="prompt_password" translatable="false">Password </string>
+    <string name="action_sign_in" translatable="false">Sign in</string>
+    <string name="action_sign_in_short" translatable="false">Sign in</string>
+    <string name="error_invalid_email" translatable="false">This email address is invalid</string>
+    <string name="error_invalid_password" translatable="false">This password is too short</string>
+    <string name="error_incorrect_password" tools:ignore="MissingTranslation">This password is incorrect</string>
+    <string name="error_field_required" translatable="false">This field is required</string>
+    <string name="permission_rationale" translatable="false">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="quote" translatable="false">"The  Road  to  Success  is Dotted with Many Tempting Parking Spaces."</string>
+    <string name="quote1" translatable="false">" 33% of Urban traffic is actively seeking a parking space."</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="signUp_txt" translatable="false">Don"'"t have an account"?" <u> SignUp"!"</u></string>
+    <string name="register" translatable="false">Register</string>
+    <string name="name" translatable="false">Name</string>
+    <string name="mobile_no" translatable="false">0000-0000000</string>
+    <string name="_email_" translatable="false">abc@gmail.com</string>
+    <string name="null_user_name" translatable="false">You did not enter a Username !</string>
+    <string name="select_role" translatable="false">Please Select Role first !</string>
+    <string name="null_mobile_no_" translatable="false">You did not enter a Mobile number !</string>
+    <string name="null_login_id" translatable="false">You did not enter a Login-Id !</string>
+    <string name="null_pswd" translatable="false">You did not enter a Password !</string>
+    <string name="conectn_lost" translatable="false">"Plase Check your internet Connection !</string>
+    <string name="title_activity_admin_map_pa">Map</string>
+
+
+</resources>
